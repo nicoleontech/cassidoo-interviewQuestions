@@ -5,10 +5,7 @@ let arr1 = [7, 4, 10, 0, 1];
 let arr2 = [9, 7, 2, 3, 6];
 
 const maximizedArray = function (arr1, arr2) {
-    const uniqueSorted = [...(new Set([...arr1, ...arr2]))].sort((a, b) => a - b);
-    let result = [];
-    result.push(uniqueSorted.slice(-arr1.length));
-    return result;
+    return [...(new Set([...arr1, ...arr2]))].sort((a, b) => a - b).slice(-arr1.length);
 }
 
 console.log(maximizedArray(arr1, arr2));
