@@ -5,9 +5,7 @@
 const previousFibonacci = (num) => {
   if (
     Number.isInteger(Math.sqrt(5 * num * num + 4)) ||
-    Number.isInteger(Math.sqrt(5 * num * num - 4)) ||
-    (Number.isInteger(Math.sqrt(5 * num * num + 4)) &&
-      Number.isInteger(Math.sqrt(5 * num * num - 4)))
+    Number.isInteger(Math.sqrt(5 * num * num - 4))
   ) {
     return Math.round(num / ((1 + Math.sqrt(5)) / 2));
   } else {
