@@ -19,8 +19,7 @@ const findIntersection = function (listA, listB) {
   const i = listA.reduce((commonIndex, curr, index) => {
     listB.map((elem, i) => {
       if (elem === curr) {
-        console.log(`index is ${index} and i is ${i}`);
-        console.log("hi");
+        console.log(`index is ${index} and i is ${i}`);      
         return [index, i];
       }
     });
