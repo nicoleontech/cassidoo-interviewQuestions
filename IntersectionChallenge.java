@@ -7,7 +7,7 @@ If the two arrays have no intersection at all, return null.
 Extra credit: how would you change your code if they were linked lists instead of arrays,
 if the input were the two head nodes, and you returned the intersection node?
 (see https://i.imgur.com/UyglRcN.png if it helps you visualize it)
-Example:
+Example: 
 let listA = [1,4,5,6]
 let listB = [2,3,4,5,6]
  findIntersection(listA, listB)
